@@ -1,0 +1,245 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap">
+
+
+<script>
+    console.log();
+</script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            background-color: #ffffff;
+        }
+
+        body main{
+            margin: 0;
+        }
+
+        .sticky{
+            position: sticky;
+            top: 10px; /* Position fixe à partir du haut de la fenêtre */
+        }
+
+        body main h1 {
+    display: inline-block;
+    border: 1px solid rgb(7, 7, 7);
+    background-color: #ffff;
+    text-align: center;
+    padding: 1em 2.5em;
+    margin: 3em 2em 0 0;
+    box-shadow: 0 10px 0px 0;
+    position: sticky;
+    top: 10px; /* Position fixe à partir du haut de la fenêtre */
+}
+
+
+        body main .cMonP {
+            text-align: justify;
+            margin: 0 auto;
+            padding-top: 3em;
+            padding-right: 24.4em;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .ici{
+            font-style: italic;
+        }
+
+        .ici2{
+            font-weight: 900;
+        }
+
+         body main section form label{
+            text-decoration: none;
+            color: black;
+            display: inline-block;
+            padding-right: 23em;
+            padding-top: 1em;
+            color: #ADD8E6;
+        } 
+
+
+        [title] {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 2em; /* Taille de la police */
+            background-color: yellow;
+}
+
+        body header nav {
+            margin: 0;
+            border-bottom: 1px solid black;
+        }
+
+        body nav h1{
+            font-family: 'Lato', sans-serif;
+            padding-left: 1.5em;
+            padding-top: 1em;
+            font-style: oblique;
+            color: #ADD8E6;
+        }
+
+        body header nav ol {
+            display: flex;
+            justify-content: flex-end;
+            margin: 0 1.5em 1.5em 0;
+            list-style-type: none;
+
+        }
+
+        body header nav ol li{
+            margin: 0 2.5em 0 0;
+
+
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+        }
+
+        .un {
+            grid-column: 1/3;
+            grid-row: 1/3;
+            padding: 0;
+            border-right: 1px solid black;
+            padding-bottom: 3.2em;
+            margin-left: 15em;
+        }
+
+        .deux {
+            grid-column: 3/4;
+            grid-row: 1/3;
+            padding: 11.5em 0 0 7em;
+
+        }
+        body main section button {
+            background-color: #D3D3D3;
+            padding: 0.8em 5em 0.8em 5em;
+            margin: 3em 0 0 0;
+            transition: background-color 0.3s ease; /* Transition pour l'effet d'hover */
+            box-shadow: 2px 2px 0px 0;
+}
+
+        body main section button:hover {
+            background-color: darkgrey; /* Couleur au survol */
+        }
+
+
+        body main section img{
+            box-shadow: 10px 0 0 0;
+        }
+
+
+
+
+        label{
+            color:#ADD8E6;
+
+        }
+
+            input{
+                background-color: #ADD8E6;
+            }
+            textarea{
+                background-color: aliceblue;
+            }
+
+
+
+
+
+
+    </style>
+</head>
+<body>
+    
+    <header>
+        <nav>
+            <h1 class="sticky">bienvenue chez les bouclettes</h1>
+            <ol>
+                <li><img src="facebook.png" alt="" title="voici un lien vers fecebook" style="width: 50px;"></li>
+                <li><img src="instagram.png" title="voici un lien vers instagram" alt="" style="width: 50px;"></li>
+                <li><img src="linkedin.png" title="voici un lien vers linkedin" alt="" style="width: 50px;"></li>
+            </ol>
+        </nav>
+        <!-- Éléments de branding, logo, etc. -->
+    </header>
+
+    <main class="grid">    
+        <section class="un">
+            <h1>HELLO, MY NAME IS PEN</h1>
+            <p class="cMonP">Lorem ipsum dolor sit amet facere.lor Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius ab <span class="ici">esse ipsum beatae aperiam eaque doloremque quibusdam, inventore </span> excepturi laudantium vel assumenda nam blanditiis dignissimos voluptatem vero voluptatum fugit atque. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum expedita repellendus asperiores, quis voluptatem magnam sapiente eaque officiis magni rerum iusto <span class="ici2">repellat placeat quo reprehenderit</span> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero, unde veritatis natus voluptatem repellat ratione assumenda. Impedit eaque esse, odio maiores quae nostrum perferendis quod. Commodi labore perspiciatis quo soluta!</p>
+            <form>
+                <div>
+                  <input type="checkbox" id="subscribeNews" name="subscribe" value="newsletter"/>
+                  <label for="subscribeNews">
+                    Souhaitez-vous vous abonner à la newsletter de Pen ?
+                  </label>
+                </div>
+            </form>
+        </section>
+
+        <section class="deux">
+            <img src="facebook.png" alt="" style="width: 300px;" >
+           <button> <a href="#">ici</a></button>
+        </section>
+
+    </main>
+
+
+<form method="post" action="ici.php">
+
+<label class="label1" for="nom">Nom :</label>
+<input type="text" name="nom" id="nom" placeholder="veuillez saisir votre nom svp" value="Nom" maxlength="50">
+
+<label class="label2" for="email">Email :</label>
+<input type="text" name="email" id="email" placeholder="veuillez saisir votre Email svp" value="Email" maxlength="60">
+
+<label class="label3" for="message">Message :</label>
+<textarea name="message" id="message" cols="30" rows="3" placeholder="veuillez tapper votre message svp"></textarea>
+</form>
+
+
+<form>
+    <div>
+      <input type="checkbox" id="subscribeNews" name="subscribe" value="newsletter"/>
+      <label for="subscribeNews">
+        Souhaitez-vous vous abonner à la newsletter de Pen ?
+      </label>
+    </div>
+    <div>
+      <button type="submit">Subscribe</button>
+    </div>
+</form>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
