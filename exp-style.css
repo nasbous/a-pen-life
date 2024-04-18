@@ -1,0 +1,109 @@
+:root {
+    --font-family: 'Monstserrat', sans-serif;
+    --primary-color: #71A5DE;
+    --secondary-color: #c6f7ec;
+    --light: rgb(249, 247, 247);
+    --dark: black;
+
+    --spacing: 1.5vh;
+    --border-radius: 0.25em;
+    --box-shadow: black 5px 5px 0px;
+    --border: 2.7px solid black;
+
+    /* EXPERIENCE CARDS ANIMATION */
+    --li-scale: 1.4;
+    --li-scale-adj: 0.2;
+    --li-scale-2nd-adj: 0.3;
+    --li-pb: 0.25em;/*?*/
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-family);
+}
+
+main {
+    display: flex;
+}
+
+nav {
+    background-color: var(--secondary-color);
+    min-height: 6vh;
+    border-top: 1.2px solid black;
+    border-bottom: 2px solid black;
+}
+
+.navbar-icon {
+    min-height: 4vh;
+    color: black;
+}
+
+.right-section {
+    background-color: var(--primary-color);
+}
+
+ul {
+    list-style: none;
+    padding: 0 calc(var(--spacing) * 4) 0 calc(var(--spacing) * 4);
+    display: grid;
+    gap: var(--spacing);
+    font-size: 1.15rem;
+}
+
+.container-xp {
+    background-color: var(--secondary-color);
+}
+
+li {
+    border: var(--border);
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    min-width: 25vh;
+
+    transition: all cubic-bezier(0.4, 0.8, 0.71, 1.03) 280ms;
+    transition-delay: var(--li-delay, 0);
+    padding-block: var(--li-pb); /*?*/
+    margin-inline: auto; /*?*/
+
+    span {
+        display: block;
+        text-align: center;
+        padding: 0.5em 1em;
+    }
+}
+
+li:hover {
+    --li-pb: 0.75em; /*?*/
+    scale: var(--li-scale);
+    z-index: 2;
+    cursor: pointer;
+}
+
+/* Select list item before the hovered one */
+li:has(+ li:hover),
+/* Select list item after the hovered one */
+li:hover+li {
+    --li-pb: 0.15em;
+    --li-delay: 40ms; /*?*/
+    scale: calc(var(--li-scale) - var(--li-scale-adj));
+    opacity: 0.85;
+}
+
+/*li:has(li:has(+ li:hover)),
+li:hover+li::after {
+    scale: calc(var(--li-scale) - var(--li-scale-2nd-adj));
+}*/
+
+/* When a list item is being hovered,
+  select list items not hovered, or before/after hover */
+ul:has(> :hover) li:not(:hover, :has(+ :hover), li:hover + *) {
+    --list-pb: 0; /*?*/
+    --li-delay: 60ms;
+    scale: calc(1 - var(--li-scale-adj));
+    opacity: 0.75;
+}
