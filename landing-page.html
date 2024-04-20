@@ -1,89 +1,72 @@
-
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap">
-    <link rel="stylesheet" href="style.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap">
 
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap">
+
+
+  <script>
+    console.log();
+  </script>
 
 </head>
+
 <body>
-    
-    <header>
-        <nav>
-            <h1 class="sticky">bienvenue chez les bouclettes</h1>
-            <ol>
-                <li><img src="facebook.png" alt="" title="voici un lien vers fecebook" style="width: 50px;"></li>
-                <li><img src="instagram.png" title="voici un lien vers instagram" alt="" style="width: 50px;"></li>
-                <li><img src="linkedin.png" title="voici un lien vers linkedin" alt="" style="width: 50px;"></li>
-            </ol>
-        </nav>
-    </header>
 
-    <main class="grid">    
-        <section class="un">
-            <h1>HELLO, MY NAME IS PEN</h1>
-            <p class="cMonP">Lorem ipsum dolor sit amet facere.lor Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius ab <span class="ici">esse ipsum beatae aperiam eaque doloremque quibusdam, inventore </span> excepturi laudantium vel assumenda nam blanditiis dignissimos voluptatem vero voluptatum fugit atque. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum expedita repellendus asperiores, quis voluptatem magnam sapiente eaque officiis magni rerum iusto <span class="ici2">repellat placeat quo reprehenderit</span> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero, unde veritatis natus voluptatem repellat ratione assumenda. Impedit eaque esse, odio maiores quae nostrum perferendis quod. Commodi labore perspiciatis quo soluta!</p>
-            <form>
-                <div>
-                  <input type="checkbox" id="subscribeNews" name="subscribe" value="newsletter"/>
-                  <label for="subscribeNews">
-                    Souhaitez-vous vous abonner à la newsletter de Pen ?
-                  </label>
-                </div>
-            </form>
-        </section>
+  <header class="monHeader">
+    <nav class="maPremiereNav">
+      <h1 class="monPremierTitre"> CV Mister <span class="blink">LePen</span></h1>
+      <ol class="maPremiereListe">
+        <li class="monPremierLi"><img src="mallette.png" alt="" title="voici un lien vers fecebook"
+            style="width: 50px;"></li>
+        <li class="monPremierLi"><img src="icons8-stylo-à-plume-48.png" title="voici un lien vers instagram" alt=""
+            style="width: 50px;"></li>
+        <li class="monPremierLi"><img src="icons8-aimer-64.png" title="voici un lien vers linkedin" alt=""
+            style="width: 50px;"></li>
+      </ol>
+    </nav>
+  </header>
 
-        <section class="deux">
-            <img src="facebook.png" alt="" style="width: 300px;" >
-           <button> <a href="#">ici</a></button>
-        </section>
+  <main class="grid">
+    <img class="monImageSerpentin" src="ARROW_1.png" alt="">
+    <section class="maPremiereSection">
+      <h1 class="monDeuxiemeTitre">HELLO, MY NAME IS PEN</h1>
+      <p class="monPremierParagraphe">Lorem ipsum dolor sit amet facere.lor Lorem ipsum dolor, sit amet
+        consectetur adipisicing
+        elit. Eius ab <span class="spanUn">esse ipsum beatae aperiam eaque doloremque quibusdam, inventore
+        </span>
+        excepturi laudantium vel assumenda nam blanditiis dignissimos voluptatem vero voluptatum fugit atque.
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum expedita repellendus asperiores, quis
+        voluptatem magnam sapiente eaque officiis magni rerum iusto <span class="spanDeux">repellat placeat quo
+          reprehenderit</span> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque odit sit
+        officiis ipsa accusamus non voluptate, nulla ullam, temporibus veniam vero in. Ullam, labore minima eos
+        culpa quia reprehenderit quidem. Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet
+        consectetur adipisicing elit. Maxime ratione </p>
 
-    </main>
-
-
-<form method="post" action="ici.php">
-
-<label class="label1" for="nom">Nom :</label>
-<input type="text" name="nom" id="nom" placeholder="veuillez saisir votre nom svp" value="Nom" maxlength="50">
-
-<label class="label2" for="email">Email :</label>
-<input type="text" name="email" id="email" placeholder="veuillez saisir votre Email svp" value="Email" maxlength="60">
-
-<label class="label3" for="message">Message :</label>
-<textarea name="message" id="message" cols="30" rows="3" placeholder="veuillez tapper votre message svp"></textarea>
-</form>
-
-
-<form>
-    <div>
-      <input type="checkbox" id="subscribeNews" name="subscribe" value="newsletter"/>
-      <label for="subscribeNews">
-        Souhaitez-vous vous abonner à la newsletter de Pen ?
-      </label>
-    </div>
-    <div>
-      <button type="submit">Subscribe</button>
-    </div>
-</form>
-  
+      <div class="contenerPremierButton">
+        <button class="monPremierBouttonCtaBio"> <a href="#">CTA BIO</a></button>
+      </div>
+    </section>
 
 
 
 
+    <section class="maDeuxiemeSection" style="background-color: #FFBFDA;">
+      <img class="monSerpentinPhotoCadreHaut" src="ARROW_3.png" alt="">
+      <div class="contenerPremierCadrePhoto">
 
-
-
-
-
-
-
-
-
+      </div>
+      <img class="maPhotoDeCadre" src="330968cec56a4b3083929d179dc442c4.webp" alt="">
+      <img class="monSerpentinPhotoCadreBas" src="ARROW_2.png" alt="">
+      <!-- <button class="monDeuxiemeButtonIci"> <a href="#">ici</a></button> -->
+    </section>
+  </main>
 </body>
+
 </html>

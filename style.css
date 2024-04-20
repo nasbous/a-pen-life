@@ -1,146 +1,230 @@
+body {
+  margin: 0;
+  padding: 0;
 
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+}
 
-        body {
-            margin: 0;
-            font-family: 'Roboto', sans-serif;
-            background-color: #ffffff;
-        }
-
-        body main{
-            margin: 0;
-        }
-
-        .sticky{
-            position: sticky;
-            top: 20px; 
-        }
-
-        body main h1 {
-    display: inline-block;
-    border: 1px solid rgb(7, 7, 7);
-    background-color: #ffff;
-    text-align: center;
-    padding: 1em 2.5em;
-    margin: 3em 2em 0 0;
-    box-shadow: 0 10px 0px 0;
-    position: sticky;
-    top: 10px; /* Position fixe à partir du haut de la fenêtre */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 
-        body main .cMonP {
-            text-align: justify;
-            margin: 0 auto;
-            padding-top: 3em;
-            padding-right: 24.4em;
-            font-family: 'Montserrat', sans-serif;
-        }
+/* :root {} */
 
-        .ici{
-            font-style: italic;
-        }
-
-        .ici2{
-            font-weight: 900;
-        }
-
-         body main section form label{
-            text-decoration: none;
-            color: black;
-            display: inline-block;
-            padding-right: 23em;
-            padding-top: 1em;
-            color: #ADD8E6;
-        } 
+/* ***************************************debut header(NAV / H1 / Ol / Li) ************************************************************* */
 
 
-        [title] {
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
-            font-size: 2em; /* Taille de la police */
-            background-color: yellow;
+/* body .monHeader {} */
+
+body header .maPremiereNav {
+  margin: 0;
+  border-bottom: 4px solid black;
+  border-top: 4px solid black;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
 }
 
-        body header nav {
-            margin: 0;
-            border-bottom: 1px solid black;
-        }
-
-        body nav h1{
-            font-family: 'Lato', sans-serif;
-            padding-left: 1.5em;
-            padding-top: 1em;
-            font-style: oblique;
-            color: #ADD8E6;
-        }
-
-        body header nav ol {
-            display: flex;
-            justify-content: flex-end;
-            margin: 0 1.5em 1.5em 0;
-            list-style-type: none;
-
-        }
-
-        body header nav ol li{
-            margin: 0 2.5em 0 0;
-
-
-        }
-
-        .grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
-            grid-template-rows: 1fr 1fr;
-        }
-
-        .un {
-            grid-column: 1/3;
-            grid-row: 1/3;
-            padding: 0;
-            border-right: 1px solid black;
-            padding-bottom: 3.2em;
-            margin-left: 15em;
-        }
-
-        .deux {
-            grid-column: 3/4;
-            grid-row: 1/3;
-            padding: 11.5em 0 0 7em;
-
-        }
-        body main section button {
-            background-color: #D3D3D3;
-            padding: 0.8em 5em 0.8em 5em;
-            margin: 3em 0 0 0;
-            transition: background-color 0.3s ease; /* Transition pour l'effet d'hover */
-            box-shadow: 2px 2px 0px 0;
+body header nav .monPremierTitre {
+  font-family: 'Lato', sans-serif;
+  padding-left: 1.5em;
+  padding-top: 0.4em;
+  padding-bottom: 0.4em;
+  font-style: oblique;
+  color: #FFD700;
+  font-family: 'Comic Sans MS', sans-serif;
+  font-size: 2.5em;
 }
 
-        body main section button:hover {
-            background-color: darkgrey; /* Couleur au survol */
-        }
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+body header nav .blink {
+  animation: blink 1.8s infinite;
+}
+
+body header .maPremiereListe {
+  list-style-type: none;
+  display: flex;
+  margin-right: 3.5em;
+}
+
+body header nav ol .monPremierLi {
+  margin-right: 1.5em;
+}
+
+/* ***************************************fin header(NAV / H1 / Ol => Li)   ************************************************************* */
 
 
-        body main section img{
-            box-shadow: 10px 0 0 0;
-        }
 
 
 
 
-        label{
-            color:#ADD8E6;
 
-        }
+/* ***************************************debut main(Section => H1 => P / Section => form => div / Section => img => button ************************************************************* */
+body .grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  background-color: #FFE4E4;
 
-            input{
-                background-color: #ADD8E6;
-            }
-            textarea{
-                background-color: aliceblue;
-            }
+}
+
+body main .monImageSerpentin {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  z-index: 1;
+  margin-top: 16.3em;
+}
+
+
+body main .maPremiereSection {
+  grid-column: 1/3;
+  grid-row: 1/1;
+  padding: 0;
+  border-right: 2px solid black;
+  margin-left: 15em;
+  padding-right: 19em;
+
+}
+
+body main section .monDeuxiemeTitre {
+  display: inline-block;
+  border: 4px solid rgb(7, 7, 7);
+  background-color: #ffff;
+  text-align: center;
+  padding: 0.4em 0.6em 0.5em 0.7em;
+  margin: 2em 2em 0 0;
+  box-shadow: 0 10px 0px 0;
+  position: sticky;
+  top: 10px;
+
+}
+
+
+body main section .monPremierParagraphe {
+  text-align: justify;
+  margin: 0 auto;
+  padding-top: 2em;
+  font-family: 'Montserrat', sans-serif;
+  margin-right: 3em;
+
+}
+
+/* 
+    body main section p .spanUn {}
+
+
+    body main section p .spanDeux {}
+
+
+
+    body main section .contenerPremierButton {} */
+
+
+body main section .monPremierBouttonCtaBio {
+  margin-left: 13em;
+  background-color: pink;
+  padding: 1em 3em;
+  margin-top: 1.5em;
+}
+
+
+body main section .maDeuxiemeSection {
+  background-color: #FFBFDA;
+  grid-column: 3/3;
+  grid-row: 1/1;
+
+}
+
+
+body main section .contenerPremierCadrePhoto {
+  /* border: 1px solid black; */
+  padding: 0em;
+  padding-right: 5em;
+  /* margin: 10em 8em 0em 8em; */
+  /* box-shadow: 2px 2px 0px 0; */
+  transform: rotate(5deg);
+
+}
+
+body main section .maPhotoDeCadre {
+  width: 300px;
+  height: 370px;
+  grid-column: 1/2;
+  grid-row: 1/2;
+  transform: rotate(5deg);
+  z-index: 2;
+  box-shadow: 10px 12px 0px 0;
+  margin-top: -100em;
+  margin-left: 7em;
+  transition: transform 0.5s ease;
+}
+
+body main section .maPhotoDeCadre:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+  transition: transform 0.5s ease;
+}
+
+body main section .maPhotoDeCadre:hover::after {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  z-index: 2;
+  transition: transform 0.5s ease;
+}
+
+
+
+body main section .monSerpentinPhotoCadreBas {
+  width: 300px;
+  height: 370px;
+  grid-column: 1/2;
+  grid-row: 1/2;
+  z-index: 1;
+  margin-top: -12em;
+  margin-left: 15em;
+}
+
+body main section .monSerpentinPhotoCadreHaut {
+  width: 470px;
+  height: 500px;
+  grid-column: 1/2;
+  grid-row: 1/2;
+  z-index: 4;
+  /* margin-top: -2em; */
+  margin-left: 1em;
+  padding-bottom: 18em;
+}
+
+
+
+/* body main section .monDeuxiemeButtonIci {
+margin-left: 13em;
+background-color: pink;
+padding: 1em 3em;
+margin-top: 1.5em;
+} */
