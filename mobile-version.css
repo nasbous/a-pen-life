@@ -1,8 +1,12 @@
+/* VARIABLES */
+
 :root {
     --font-family: 'Monstserrat', sans-serif;
-    --primary-color: #52A5FF;
-    --secondary-color: #c6f7ec;
-    --third-color: #FFBFDA;
+    --primary-color-landing: #FFE4E4;
+    --secondary-color-landing: #FFBFDA;
+    --primary-color-xp: #52A5FF;
+    --secondary-color-xp: #c6f7ec;
+    --third-color-xp: #FFBFDA;
     --light: rgb(249, 247, 247);
     --dark: black;
 
@@ -10,33 +14,74 @@
     --border-radius: 0.25em;
     --box-shadow: black 5px 7px 0px;
     --border: 3.1px solid black;
-
-    /* EXPERIENCE CARDS ANIMATION */
-    --li-scale: 1.1;
-    --li-scale-adj: 0.2;
-    --li-padding: 0.25em;
 }
 
-nav {
-    justify-content: center;
-    gap: calc(var(--spacing) * 2);
-}
+/* GÉNÉRAL */
 
 p {
     font-size: 0.8rem;
     line-height: 1.5;
 }
 
-main {
-    background-color: var(--primary-color);
+/* NAVBAR */
+
+nav {
+    justify-content: center;
+    gap: calc(var(--spacing) * 2);
 }
 
-.left-section {
+/* LANDING PAGE */
+
+.main-section-landing {
+    display: initial;
+}
+
+.left-section-landing {
+    padding: calc(var(--spacing) *2) calc(var(--spacing) * 8) calc(var(--spacing) * 9) calc(var(--spacing) * 8);
+}
+
+.landing-page-title {
+    letter-spacing: 0.07rem;
+    font-size: 1.1rem;
+    rotate: -1deg;
+}
+
+.cta {
+    font-size: 0.7rem;
+}
+
+.arrow-left-landing {
+    max-height: 15vh;
+    bottom: 9vh;
+}
+
+.right-section-landing {
+    border-left: initial;
+    border-top: 2px solid black;
+    padding-bottom: calc(var(--spacing) * 4);
+}
+
+.arrow-right-1-landing,
+.arrow-right-2-landing {
+    display: none;
+}
+
+.landing-illustration {
+    min-width: 11em;
+    min-height: 13em;
+}
+
+/* EXPERIENCES PAGE */
+
+.main-section-xp {
+    background-color: var(--primary-color-xp);
+}
+
+.left-section-xp {
     min-width: 10vw;
 }
 
-.left-section ul {
-    margin: calc(var(--spacing) * 3);
+.left-section-xp ul {
     padding: 0;
 }
 
@@ -47,22 +92,31 @@ li.container-xp {
     overflow: hidden;
 }
 
-.left-section ul li {
+.left-section-xp ul li {
     border-radius: 50%;
 }
 
-.right-section {
+.right-section-xp {
     flex-direction: column-reverse;
     align-items: center;
     background-color: #F1F5FF;
     margin: calc(var(--spacing) *2);
     border: var(--border);
     border-radius: var(--border-radius);
-    padding: calc(var(--spacing) * 3.5);
+    padding: calc(var(--spacing) * 3.5) calc(var(--spacing) * 4.5);
+    margin-bottom: calc(var(--spacing) * 8);
 }
 
 .container-description {
     padding-right: initial;
+}
+
+.right-section-xp p {
+    padding-bottom: calc(var(--spacing) * 3);
+}
+
+.container-illustration {
+    min-height: initial;
 }
 
 .xp-illustration {
@@ -80,15 +134,15 @@ li.container-xp {
 #illustration-2 {
     --box-shadow: black 6px 4px 0px;
     border: 0.5px solid black;
-    rotate: -3deg;
+    rotate: 3deg;
     min-width: 7em;
     min-height: 7em;
     margin-bottom: calc(var(--spacing) * 1.5);
 }
 
 .swirly-arrow {
-    rotate: 180deg;
+    rotate: -112deg;
     max-height: 18vh;
-    right: 7vw;
+    right: 1vw;
     bottom: -7vh;
 }
