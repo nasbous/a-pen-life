@@ -1,0 +1,98 @@
+:root {
+    --font-family: 'Monstserrat', sans-serif;
+    --primary-color: #52A5FF;
+    --secondary-color: #c6f7ec;
+    --third-color: #FFBFDA;
+    --light: rgb(249, 247, 247);
+    --dark: black;
+
+    --spacing: 1.5vh;
+    --border-radius: 0.25em;
+    --box-shadow: black 5px 7px 0px;
+    --border: 3.1px solid black;
+
+    /* EXPERIENCE CARDS ANIMATION */
+    --li-scale: 1.1;
+    --li-scale-adj: 0.2;
+    --li-padding: 0.25em;
+}
+
+nav {
+    justify-content: center;
+    gap: calc(var(--spacing) * 2);
+}
+
+p {
+    font-size: 0.8rem;
+    line-height: 1.5;
+}
+
+main {
+    background-color: var(--primary-color);
+}
+
+.left-section {
+    min-width: 10vw;
+}
+
+.left-section ul {
+    margin: calc(var(--spacing) * 3);
+    padding: 0;
+}
+
+li.container-xp {
+    min-width: initial;
+    max-width: 1.6em;
+    max-height: 1.6em;
+    overflow: hidden;
+}
+
+.left-section ul li {
+    border-radius: 50%;
+}
+
+.right-section {
+    flex-direction: column-reverse;
+    align-items: center;
+    background-color: #F1F5FF;
+    margin: calc(var(--spacing) *2);
+    border: var(--border);
+    border-radius: var(--border-radius);
+    padding: calc(var(--spacing) * 3.5);
+}
+
+.container-description {
+    padding-right: initial;
+}
+
+.xp-illustration {
+    border: var(--border);
+    border-radius: var(--border-radius);
+    max-width: 5em;
+}
+
+#illustration-1,
+#illustration-3,
+#illustration-4 {
+    display: none;
+}
+
+#illustration-2 {
+    --box-shadow: black 6px 4px 0px;
+    border: 0.5px solid black;
+    rotate: -3deg;
+    min-width: 7em;
+    min-height: 7em;
+    margin-bottom: calc(var(--spacing) * 1.5);
+}
+
+.container-cta {
+    display: none;
+}
+
+.swirly-arrow {
+    rotate: 180deg;
+    max-height: 18vh;
+    right: 7vw;
+    bottom: -7vh;
+}

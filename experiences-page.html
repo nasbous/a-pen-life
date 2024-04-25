@@ -6,13 +6,17 @@
     <title>A Pen's Life - Expériences</title>
 
     <link rel="stylesheet" href="exp-style.css">
+    <link rel="stylesheet" href="mobile-version.css" media="screen and (max-width: 500px)">
+
+    <script src="script.js" defer></script>
+    <script src="https://kit.fontawesome.com/f61418b52c.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <nav>
-        <i class="fa-regular fa-pen navbar-icon"></i>
+        <i class="fa-solid fa-pen-nib navbar-icon"></i>
         <i class="fa-regular fa-folder navbar-icon"></i>
-        <i class="fa-regular fa-heart navbar-icon"></i>
+        <i class="fa-solid fa-heart navbar-icon"></i>
     </nav>
     <!-- EX STACKING CARDS : https://codepen.io/bramus/pen/PobmGme 
          EX GRAINY BUTTONS : https://www.codehim.com/html5-css3/grainy-buttons-design-using-css/ 
@@ -20,29 +24,42 @@
     <main>
         <section class="left-section">
             <ul>
-                <li class="container-xp container-1"><span>Expérience 1</span></li>
-                <li class="container-xp container-2"><span>Expérience 2</span></li>
-                <li class="container-xp container-3"><span>Expérience 3</span></li>
-                <li class="container-xp container-4"><span>Expérience 4</span></li>
-                <li class="container-xp container-5"><span>Expérience 5</span></li>
+                <li class="container-xp" onclick="displayDescription(1)"><span>Expérience 1</span></li>
+                <li class="container-xp" onclick="displayDescription(2)"><span>Expérience 2</span></li>
+                <li class="container-xp" onclick="displayDescription(3)"><span>Expérience 3</span></li>
+                <li class="container-xp" onclick="displayDescription(4)"><span>Expérience 4</span></li>
+                <li class="container-xp" onclick="displayDescription(5)"><span>Expérience 5</span></li>
+                <!-- Ajouter flèche à droite des titres quand hover indiquant qu'ils sont en lien avec le paragraphe, ou une icône incitant à cliquer ? -->
             </ul>
         </section>
 
         <section class="right-section">
-            <div>
-                <p class="experience-description xp-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat dolor neque molestias animi aperiam possimus debitis ex dicta, ea quia mollitia? Tempora assumenda nostrum odit aliquid ratione nam cumque dolorem.</p>
-                <p class="experience-description xp-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat dolor neque molestias animi aperiam possimus debitis ex dicta, ea quia mollitia? Tempora assumenda nostrum odit aliquid ratione nam cumque dolorem.</p>
-                <p class="experience-description xp-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat dolor neque molestias animi aperiam possimus debitis ex dicta, ea quia mollitia? Tempora assumenda nostrum odit aliquid ratione nam cumque dolorem.</p>
-                <p class="experience-description xp-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat dolor neque molestias animi aperiam possimus debitis ex dicta, ea quia mollitia? Tempora assumenda nostrum odit aliquid ratione nam cumque dolorem.</p>
-                <p class="experience-description xp-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat dolor neque molestias animi aperiam possimus debitis ex dicta, ea quia mollitia? Tempora assumenda nostrum odit aliquid ratione nam cumque dolorem.</p>
+            <div class="container-description"> 
+                <p class="xp-description" id="presentation"> Hello Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat dolor neque molestias animi aperiam possimus debitis ex dicta, ea quia mollitia? Tempora assumenda nostrum odit aliquid ratione nam cumque dolorem.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat dolor neque molestias animi aperiam possimus debitis ex dicta, ea quia mollitia? Tempora assumenda nostrum odit aliquid ratione nam cumque dolorem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat dolor neque molestias animi aperiam possimus debitis ex dicta, ea quia mollitia? Tempora assumenda nostrum odit aliquid ratione nam </p>       
+                <p class="xp-description" id="xp-1">J'ai eu la chance incroyable de collaborer brièvement avec Karl Lagerfeld, la légende de la mode. Mon voyage avec lui a été une aventure que peu de stylos ont eu l'occasion de vivre. Un jour que je discutais avec mes semblables dans un pot à crayons, je me retrouve tout à coup dans les mains expertes du styliste. J'ai ainsi pu prendre part à des moments de création pure. Les croquis gracieux, les mots inspirés... tout prenait vie sous mon humble pointe. 
+                Travailler à ses côtés m'a offert une immersion incomparable dans le monde de la mode, et m'a appris à travailler sous pression, à répondre à des demandes créatives exigeantes et à faire preuve d'une grande polyvalence. Bref, cette aventure restera à jamais gravée dans ma pointe.</p>
+                <p class="xp-description" id="xp-2">XP-2 Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat dolor neque molestias animi aperiam possimus debitis ex dicta, ea quia mollitia? Tempora assumenda nostrum odit aliquid ratione nam cumque dolorem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat dolor neque molestias animi aperiam possimus debitis ex dicta, ea quia mollitia? Tempora assumenda nostrum odit aliquid ratione nam cumque dolorem.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat dolor neque molestias animi aperiam possimus debitis ex dicta, ea quia mollitia? Tempora assumenda nostrum odit aliquid ratione nam cumque dolorem.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                <p class="xp-description" id="xp-3">XP-3 Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat dolor neque molestias animi aperiam possimus debitis ex dicta, ea quia mollitia? Tempora assumenda nostrum odit aliquid ratione nam cumque dolorem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat dolor neque molestias animi aperiam possimus debitis ex dicta, ea quia mollitia? Tempora assumenda nostrum odit aliquid ratione nam cumque dolorem.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat dolor neque molestias animi aperiam possimus debitis ex dicta, ea quia mollitia? Tempora assumenda nostrum odit aliquid ratione nam cumque dolorem.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                <p class="xp-description" id="xp-4">XP-4 Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat dolor neque molestias animi aperiam possimus debitis ex dicta, ea quia mollitia? Tempora assumenda nostrum odit aliquid ratione nam cumque dolorem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat dolor neque molestias animi aperiam possimus debitis ex dicta, ea quia mollitia? Tempora assumenda nostrum odit aliquid ratione nam cumque dolorem.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat dolor neque molestias animi aperiam possimus debitis ex dicta, ea quia mollitia? Tempora assumenda nostrum odit aliquid ratione nam cumque dolorem.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                <p class="xp-description" id="xp-5">XP-5 Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat dolor neque molestias animi aperiam possimus debitis ex dicta, ea quia mollitia? Tempora assumenda nostrum odit aliquid ratione nam cumque dolorem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat dolor neque molestias animi aperiam possimus debitis ex dicta, ea quia mollitia? Tempora assumenda nostrum odit aliquid ratione nam cumque dolorem.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat dolor neque molestias animi aperiam possimus debitis ex dicta, ea quia mollitia? Tempora assumenda nostrum odit aliquid ratione nam cumque dolorem.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                <div class="container-cta"><a href="" class="cta cta-contact">CONTACT ME!</a></div>
             </div>
-            <div>
-                <div><img src="" alt=""></div>
-                <div><img src="" alt=""></div>
-                <div><img src="" alt=""></div>
-                <div><img src="" alt=""></div>
+            <img src="./images/swirly-arrow.png" alt="" class="swirly-arrow">
+            <div class="container-illustration">
+                <div class="xp-illustration" id="illustration-1"></div>
+                <div class="xp-illustration" id="illustration-2"></div>
+                <div class="xp-illustration" id="illustration-3"></div>
+                <div class="xp-illustration" id="illustration-4"></div>
             </div>
-            <img src="" alt="">
         </section>
     </main>
 </body>
