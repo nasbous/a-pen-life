@@ -86,10 +86,6 @@ li.container-xp {
     margin-bottom: calc(var(--spacing) * 1.5);
 }
 
-.container-cta {
-    display: none;
-}
-
 .swirly-arrow {
     rotate: 180deg;
     max-height: 18vh;
