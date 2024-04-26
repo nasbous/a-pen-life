@@ -54,6 +54,9 @@ main {
     text-decoration: none;
     color: black;
     padding: var(--spacing);
+    &:hover {
+        cursor: pointer;
+    }
 }
 
 p {
@@ -127,6 +130,7 @@ nav {
     font-family: 'Archivo Narrow';
     font-weight: 300;
     letter-spacing: 0.08rem;
+    margin-top: calc(var(--spacing) * 4);
 }
 
 .cta.cta-landing {
@@ -138,7 +142,7 @@ nav {
     z-index: 1;
     position: absolute;
     left: -6vw;
-    bottom: -9vh;
+    bottom: 5vh;
 }
 
 .right-section-landing {
@@ -156,16 +160,16 @@ nav {
     rotate: -18deg;
     position: absolute;
     right: 21vw;
-    top: 30vh;
+    top: 22vh;
 }
 
 .arrow-right-2-landing {
     z-index: 1;
     max-height: 25vh;
-    rotate: -90deg;
+    rotate: -80deg;
     position: absolute;
-    right: 7vw;
-    bottom: 8.5vh;
+    right: 9vw;
+    bottom: 15.5vh;
 }
 
 .landing-illustration {
@@ -194,6 +198,7 @@ nav {
 }
 
 .left-section-xp ul {
+    padding-top: calc(var(--spacing) * 4);
     min-height: 90%;
     list-style: none;
     text-transform: uppercase;
@@ -249,7 +254,7 @@ ul:has(> :hover) li:not(:hover, :has(+ :hover), li:hover + *) {
 .right-section-xp {
     background-color: var(--primary-color-xp);
     display: flex;
-    padding: var(--spacing) calc(var(--spacing) * 10);
+    padding: calc(var(--spacing) * 6) calc(var(--spacing) * 10);
     border-left: 2px solid black;
     position: relative;
 }
@@ -303,6 +308,7 @@ ul:has(> :hover) li:not(:hover, :has(+ :hover), li:hover + *) {
     background-size: 95%;
     --box-shadow: #F27BBD 9px 9px 0px;
     rotate: 4deg;
+    scale: 1.3;
 }
 
 #illustration-3 {
@@ -316,10 +322,15 @@ ul:has(> :hover) li:not(:hover, :has(+ :hover), li:hover + *) {
 }
 
 .swirly-arrow {
-    rotate: 90deg;
-    max-height: 25vh;
-    z-index: 1;
+    display: none;
+}
+
+.arrow-left-xp {
     position: absolute;
-    right: 1.1vw;
-    bottom: 32vh;
+    z-index: 1;
+    max-height: 25vh;
+    transform: scaleY(-1);
+    rotate: -4deg;
+    right: 3.4vw;
+    bottom: 18.5vh;
 }

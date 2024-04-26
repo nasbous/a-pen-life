@@ -23,6 +23,10 @@ p {
     line-height: 1.5;
 }
 
+.cta {
+    cursor: pointer;
+}
+
 /* NAVBAR */
 
 nav {
@@ -37,13 +41,16 @@ nav {
 }
 
 .left-section-landing {
-    padding: calc(var(--spacing) *2) calc(var(--spacing) * 8) calc(var(--spacing) * 9) calc(var(--spacing) * 8);
+    padding: calc(var(--spacing) *2) calc(var(--spacing) * 8) calc(var(--spacing) * 7) calc(var(--spacing) * 8);
+    gap: var(--spacing);
 }
 
 .landing-page-title {
     letter-spacing: 0.07rem;
     font-size: 1.1rem;
     rotate: -1deg;
+    margin-top: calc(var(--spacing) * 6);
+    margin-bottom: calc(var(--spacing) * 2);
 }
 
 .cta {
@@ -51,14 +58,16 @@ nav {
 }
 
 .arrow-left-landing {
-    max-height: 15vh;
-    bottom: 9vh;
+    max-height: 14vh;
+    bottom: 29vh;
+    left: -15vw;
+    rotate: 39deg;
 }
 
 .right-section-landing {
     border-left: initial;
     border-top: 2px solid black;
-    padding-bottom: calc(var(--spacing) * 4);
+    padding-bottom: calc(var(--spacing) * 6);
 }
 
 .arrow-right-1-landing,
@@ -73,16 +82,23 @@ nav {
 
 /* EXPERIENCES PAGE */
 
-.main-section-xp {
-    background-color: var(--primary-color-xp);
+#main-section-xp {
+    background-color: var(--secondary-color-xp);
+    padding-top: calc(var(--spacing) * 6);
 }
 
-.left-section-xp {
+.container-xp {
+    background-color: var(--primary-color-xp);
+    cursor: pointer;
+}
+
+.left-section {
     min-width: 10vw;
 }
 
-.left-section-xp ul {
+.left-section ul {
     padding: 0;
+    background-color: var((--primary-color-xp));
 }
 
 li.container-xp {
@@ -92,11 +108,11 @@ li.container-xp {
     overflow: hidden;
 }
 
-.left-section-xp ul li {
+.left-section ul li {
     border-radius: 50%;
 }
 
-.right-section-xp {
+.right-section {
     flex-direction: column-reverse;
     align-items: center;
     background-color: #F1F5FF;
@@ -111,7 +127,7 @@ li.container-xp {
     padding-right: initial;
 }
 
-.right-section-xp p {
+.right-section p {
     padding-bottom: calc(var(--spacing) * 3);
 }
 
@@ -135,14 +151,21 @@ li.container-xp {
     --box-shadow: black 6px 4px 0px;
     border: 0.5px solid black;
     rotate: 3deg;
-    min-width: 7em;
-    min-height: 7em;
-    margin-bottom: calc(var(--spacing) * 1.5);
+    min-width: 6em;
+    min-height: 6em;
+    margin-bottom: calc(var(--spacing) * 4.5);
 }
 
 .swirly-arrow {
-    rotate: -112deg;
+    display: initial;
+    rotate: -45deg;
     max-height: 18vh;
-    right: 1vw;
-    bottom: -7vh;
+    position: absolute;
+    z-index: 1;
+    right: 3vw;
+    bottom: -13vh;
+}
+
+.arrow-left-xp {
+    display: none;
 }
