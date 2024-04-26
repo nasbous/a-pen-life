@@ -35,8 +35,9 @@ main {
 }
 
 .background-image {
-    background-image: url('ARROW.png');
-    background-size: cover;
+    background-image: url('./images/10.svg');
+    background-size: contain;
+background-repeat: no-repeat;
     background-position: center;
     position: absolute;
     top: 40%;
@@ -109,6 +110,10 @@ main {
     background-color: #FEAECF;
     border: 2.4px solid black;
     box-shadow: 6px 0px 0px black;
+}
+
+.form-success {
+    z-index: 3;
 }
 
 .success-message {
