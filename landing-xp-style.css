@@ -134,12 +134,18 @@ nav {
 }
 
 .arrow-left-landing {
-    max-height: 25vh;
-    z-index: 1;
-    position: absolute;
-    left: -6vw;
-    bottom: -9vh;
-}
+    max-height: 25vh; /* Hauteur maximale de l'image */
+    z-index: 1; /* Pour empiler l'image au-dessus des autres éléments si nécessaire */
+    position: absolute; /* Position absolue pour placer l'image de manière précise */
+    left: -1vw; /* Décalage vers la gauche de 1% de la largeur de la fenêtre */
+    top: 65vh; /* Décalage vers le bas de 65% de la hauteur de la fenêtre */
+    transition: transform 0.3s ease; /* Transition pour un effet de changement fluide */
+  }
+  
+  .arrow-left-landing:hover {
+    transform: translateX(-10px); /* Décalage de l'image vers la gauche au survol */
+  }
+  
 
 .right-section-landing {
     background-color: var(--secondary-color-landing);
