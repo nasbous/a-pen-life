@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>A Pen's Life - Landing Page</title>
+
+    <link rel="stylesheet" href="exp-style.css" />
+    <link rel="stylesheet" href="landing-xp-style.css" />
+    <link
+      rel="stylesheet"
+      href="mobile-version.css"
+      media="screen and (max-width: 500px)"
+    />
+
+    <script src="overlay.js" defer></script>
+    <script src="script.js" defer></script>
+    <script src="scrolltosection.js" defer></script>
+
+    <script
+      src="https://kit.fontawesome.com/f61418b52c.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:ital,wght@0,400..700;1,400..700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <nav id="langing-page-nav">
+      <img src="./images/contact-icon.png" class="navbar-icon" onclick="showFormOverlay()">
+      <img src="./images/icons8-image-gallery-96.png" class="navbar-icon" onclick="scrollToExperience()">
+      <img src="./images/heart-icon.png" class="navbar-icon" onclick="scrollToLanding()">
+    </nav>
+    
+
+    <div class="landing" id="landing">
+      <section>
+        <main class="main-section-landing">
+          <section class="left-section-landing">
+            <h1 class="landing-page-title">HELLO, MOI C'EST PEN</h1>
+            <p class="presentation-landing">
+              Bienvenue ! Je suis un stylo BIC à la recherche d'une opportunité
+              professionnelle enrichissante. Fort de mon expérience en rédaction
+              et en précision, je suis prêt à relever de nouveaux défis et à
+              apporter ma contribution à votre équipe. Ma polyvalence, associée
+              à ma fiabilité éprouvée, fait de moi un atout précieux pour tout
+              environnement de travail. Je suis enthousiaste à l'idée de mettre
+              mes compétences en écriture au service de votre entreprise et
+              d'aider à atteindre vos objectifs avec efficacité et
+              professionnalisme.
+            </p>
+            <div class="container-cta">
+              <a onclick="scrollToExperience()" class="cta cta-landing"
+                >DÉCOUVREZ MON CV !</a
+              >
+            </div>
+            <img
+              class="arrow-left-landing"
+              src="./images/arrow-left-landing.svg"
+              alt=""
+            />
+          </section>
+
+          <section class="right-section-landing">
+            <img
+              class="arrow-right-1-landing"
+              src="./images/arrow-right-landing-1.svg"
+              alt=""
+            />
+            <div class="landing-illustration"></div>
+            <img
+              class="arrow-right-2-landing"
+              src="./images/arrow-right-landing-2.svg"
+              alt=""
+            />
+          </section>
+        </main>
+      </section>
+    </div>
+
+    <div class="experience" id="experience-section">
+      <main>
+        <section class="left-section">
+          <ul>
+            <li class="container-xp" onclick="displayDescription(1)">
+              <span>Expérience 1</span>
+            </li>
+            <li class="container-xp" onclick="displayDescription(2)">
+              <span>Expérience 2</span>
+            </li>
+            <li class="container-xp" onclick="displayDescription(3)">
+              <span>Expérience 3</span>
+            </li>
+            <li class="container-xp" onclick="displayDescription(4)">
+              <span>Expérience 4</span>
+            </li>
+            <li class="container-xp" onclick="displayDescription(5)">
+              <span>Expérience 5</span>
+            </li>
+            <!-- Ajouter flèche à droite des titres quand hover indiquant qu'ils sont en lien avec le paragraphe, ou une icône incitant à cliquer ? -->
+          </ul>
+        </section>
+
+        <section class="right-section">
+          <div class="container-description">
+            <p class="xp-description" id="presentation">
+              Hello Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Placeat dolor neque molestias animi aperiam possimus debitis ex
+              dicta, ea quia mollitia? Tempora assumenda nostrum odit aliquid
+              ratione nam cumque dolorem. Lorem ipsum dolor sit amet consectetur
+              adipisicing elit. Placeat dolor neque molestias animi aperiam
+              possimus debitis ex dicta, ea quia mollitia? Tempora assumenda
+              nostrum odit aliquid ratione nam cumque dolorem. Lorem ipsum dolor
+              sit amet consectetur adipisicing elit. Placeat dolor neque
+              molestias animi aperiam possimus debitis ex dicta, ea quia
+              mollitia? Tempora assumenda nostrum odit aliquid ratione nam
+            </p>
+            <p class="xp-description" id="xp-1">
+              J'ai eu la chance incroyable de collaborer brièvement avec Karl
+              Lagerfeld, la légende de la mode. Mon voyage avec lui a été une
+              aventure que peu de stylos ont eu l'occasion de vivre. Un jour que
+              je discutais avec mes semblables dans un pot à crayons, je me
+              retrouve tout à coup dans les mains expertes du styliste. J'ai
+              ainsi pu prendre part à des moments de création pure. Les croquis
+              gracieux, les mots inspirés... tout prenait vie sous mon humble
+              pointe. Travailler à ses côtés m'a offert une immersion
+              incomparable dans le monde de la mode, et m'a appris à travailler
+              sous pression, à répondre à des demandes créatives exigeantes et à
+              faire preuve d'une grande polyvalence. Bref, cette aventure
+              restera à jamais gravée dans ma pointe.
+            </p>
+            <p class="xp-description" id="xp-2">
+              XP-2 Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Placeat dolor neque molestias animi aperiam possimus debitis ex
+              dicta, ea quia mollitia? Tempora assumenda nostrum odit aliquid
+              ratione nam cumque dolorem. Lorem ipsum dolor sit amet consectetur
+              adipisicing elit. Placeat dolor neque molestias animi aperiam
+              possimus debitis ex dicta, ea quia mollitia? Tempora assumenda
+              nostrum odit aliquid ratione nam cumque dolorem. Lorem ipsum dolor
+              sit amet consectetur adipisicing elit. Placeat dolor neque
+              molestias animi aperiam possimus debitis ex dicta, ea quia
+              mollitia? Tempora assumenda nostrum odit aliquid ratione nam
+              cumque dolorem. Lorem ipsum dolor sit amet consectetur adipisicing
+              elit.
+            </p>
+            <p class="xp-description" id="xp-3">
+              Pendant cinq ans, avec ma pointe précise et mon encre infaillible,
+              j’ai été l'outil de prédilection d'un brillant professeur
+              universitaire. J’ai su capturer ses idées avec clarté et élégance,
+              transformant ses pensées en mots tangibles sur le papier. Mon rôle
+              ne se limitait pas à l'enseignement, puisque j'ai également été un
+              partenaire indispensable dans ses recherches, annotant des
+              articles et des livres avec habileté, rédigeant des thèses et des
+              essais approfondis notamment dans le domaine de la psychologie
+              analytique. Mon encre bleue est ainsi devenue le symbole du savoir
+              et de la qualité du travail du professeur. Malgré les défis, ma
+              rigueur est restée inébranlable, et j’ai toujours su répondre aux
+              exigences d’un travail si pointu.
+            </p>
+
+            <p class="xp-description" id="xp-4">
+              XP-4 Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Placeat dolor neque molestias animi aperiam possimus debitis ex
+              dicta, ea quia mollitia? Tempora assumenda nostrum odit aliquid
+              ratione nam cumque dolorem. Lorem ipsum dolor sit amet consectetur
+              adipisicing elit. Placeat dolor neque molestias animi aperiam
+              possimus debitis ex dicta, ea quia mollitia? Tempora assumenda
+              nostrum odit aliquid ratione nam cumque dolorem. Lorem ipsum dolor
+              sit amet consectetur adipisicing elit. Placeat dolor neque
+              molestias animi aperiam possimus debitis ex dicta, ea quia
+              mollitia? Tempora assumenda nostrum odit aliquid ratione nam
+              cumque dolorem. Lorem ipsum dolor sit amet consectetur adipisicing
+              elit.
+            </p>
+            <p class="xp-description" id="xp-5">
+              XP-5 Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Placeat dolor neque molestias animi aperiam possimus debitis ex
+              dicta, ea quia mollitia? Tempora assumenda nostrum odit aliquid
+              ratione nam cumque dolorem. Lorem ipsum dolor sit amet consectetur
+              adipisicing elit. Placeat dolor neque molestias animi aperiam
+              possimus debitis ex dicta, ea quia mollitia? Tempora assumenda
+              nostrum odit aliquid ratione nam cumque dolorem. Lorem ipsum dolor
+              sit amet consectetur adipisicing elit. Placeat dolor neque
+              molestias animi aperiam possimus debitis ex dicta, ea quia
+              mollitia? Tempora assumenda nostrum odit aliquid ratione nam
+              cumque dolorem. Lorem ipsum dolor sit amet consectetur adipisicing
+              elit.
+            </p>
+            <div class="container-cta">
+              <a href="" class="cta cta-contact">CONTACT ME!</a>
+            </div>
+          </div>
+          <img src="./images/swirly-arrow.png" alt="" class="swirly-arrow" />
+          <div class="container-illustration">
+            <div class="xp-illustration" id="illustration-1"></div>
+            <div class="xp-illustration" id="illustration-2"></div>
+            <div class="xp-illustration" id="illustration-3"></div>
+            <div class="xp-illustration" id="illustration-4"></div>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
