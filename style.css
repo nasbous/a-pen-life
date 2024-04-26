@@ -37,7 +37,7 @@ main {
 .background-image {
     background-image: url('./images/10.svg');
     background-size: contain;
-background-repeat: no-repeat;
+    background-repeat: no-repeat;
     background-position: center;
     position: absolute;
     top: 40%;

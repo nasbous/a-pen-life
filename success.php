@@ -13,14 +13,14 @@
         <div class="background-image"></div>
         <div class="form-success">
             <h2 class='success-message'>Merci pour votre message</h2>
-            <p>Nous l'avons bien reçu :</p>
+            <p>Je l'ai bien reçu :</p>
             <ul>
-                <li><strong>Name:</strong> <?php echo htmlspecialchars($_GET['name']); ?></li>
-                <li><strong>Email:</strong> <?php echo htmlspecialchars($_GET['email']); ?></li>
-                <li><strong>Message:</strong> <?php echo htmlspecialchars($_GET['message']); ?></li>
+                <li><strong>Nom :</strong> <?php echo htmlspecialchars($_GET['name']); ?></li>
+                <li><strong>Email :</strong> <?php echo htmlspecialchars($_GET['email']); ?></li>
+                <li><strong>Message :</strong> <?php echo htmlspecialchars($_GET['message']); ?></li>
             </ul>
             <form action="index.html">
-    <input type="submit" value="Retour">
+    <input type="submit" value="RETOUR">
 </form>
         </div>
     </div>

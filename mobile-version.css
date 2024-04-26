@@ -98,7 +98,6 @@ nav {
 
 .left-section ul {
     padding: 0;
-    background-color: var((--primary-color-xp));
 }
 
 li.container-xp {
@@ -120,6 +119,7 @@ li.container-xp {
     border: var(--border);
     border-radius: var(--border-radius);
     padding: calc(var(--spacing) * 3.5) calc(var(--spacing) * 4.5);
+    box-shadow: var(--box-shadow);
     margin-bottom: calc(var(--spacing) * 8);
 }
 

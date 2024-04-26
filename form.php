@@ -14,13 +14,13 @@
         <div class="background-image"></div>
         <div class="form">
             <form action="process_form.php" method="post">
-                <label for="name">Name:</label>
+                <label for="name">Nom :</label>
                 <input type="text" id="name" name="name" required>
-                <label for="email">Email:</label>
+                <label for="email">Email :</label>
                 <input type="email" id="email" name="email" required>
-                <label for="message">Message:</label>
+                <label for="message">Message :</label>
                 <textarea id="message" name="message" rows="4" required></textarea>
-                <input type="submit" value="Send">
+                <input type="submit" value="ENVOYER">
             </form>
         </div>
     </div>
