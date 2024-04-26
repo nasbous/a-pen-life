@@ -1,7 +1,6 @@
 document.addEventListener("DOMContentLoaded", function() {
-    const penNibIcon = document.querySelector('.fa-solid.fa-pen-nib');
+    const contactIcon = document.querySelector('img[src="./images/contact-icon.png"]');
     const contactLink = document.querySelector('.cta-contact');
-
     function showFormOverlay() {
         const overlay = document.createElement('div');
         overlay.classList.add('overlay');
@@ -46,7 +45,7 @@ document.addEventListener("DOMContentLoaded", function() {
         formContainer.appendChild(closeButton);
     }
 
-    penNibIcon.addEventListener('click', showFormOverlay);
+    contactIcon.addEventListener('click', showFormOverlay);
 
     contactLink.addEventListener('click', function(event) {
         event.preventDefault();
