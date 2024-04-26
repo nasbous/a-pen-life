@@ -6,7 +6,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $message = htmlspecialchars($_POST['message']);
 
     if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-        header("Location: index.php?status=invalid_email");
+        header("Location: form.php?status=invalid_email");
         exit;
     }
 
@@ -20,11 +20,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         header("Location: success.php?name=$name&email=$email&message=$message");
         exit;
     } else {
-        header("Location: index.php?status=error");
+        header("Location: form.php?status=error");
         exit;
     }
 } else {
-    header("Location: index.php");
+    header("Location: form.php");
     exit;
 }
 ?>

@@ -12,7 +12,7 @@
     <div class="form-container">
         <div class="background-image"></div>
         <div class="form-success">
-            <h2>Merci pour votre message</h2>
+            <h2 class='success-message'>Merci pour votre message</h2>
             <p>Nous l'avons bien reçu :</p>
             <ul>
                 <li><strong>Name:</strong> <?php echo htmlspecialchars($_GET['name']); ?></li>
