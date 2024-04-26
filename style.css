@@ -102,10 +102,13 @@ main {
     cursor: pointer;
     font-size: 16px;
     width: 8rem;
+    transition: background-color 0.3s ease, border 0.3s ease, box-shadow 0.3s ease;
 }
 
 .form-container input[type="submit"]:hover {
-    background-color:  #FEAECF;
+    background-color: #FEAECF;
+    border: 2.4px solid black;
+    box-shadow: 6px 0px 0px black;
 }
 
 .success-message {

@@ -131,7 +131,6 @@ nav {
 
 .cta.cta-landing {
     background-color: var(--secondary-color-landing);
-    margin-left: 11vh;
 }
 
 .arrow-left-landing {
@@ -176,7 +175,7 @@ nav {
     box-shadow: var(--box-shadow);
     min-width: 16em;
     min-height: 18em;
-    background-size: 95%;
+    background-size: cover;
     background-position: center;
     background-color: white;
     background-repeat: no-repeat;

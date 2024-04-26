@@ -1,5 +1,6 @@
 document.addEventListener("DOMContentLoaded", function() {
     const penNibIcon = document.querySelector('.fa-solid.fa-pen-nib');
+    const contactLink = document.querySelector('.cta-contact');
 
     function showFormOverlay() {
         const overlay = document.createElement('div');
@@ -9,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function() {
         formContainer.classList.add('form-container');
 
         formContainer.innerHTML = `
-        <link rel="stylesheet" type="text/css" href="style.css">
+            <link rel="stylesheet" type="text/css" href="style.css">
             <div class="background-image"></div>
             <div class="form">
                 <form action="process_form.php" method="post">
@@ -46,4 +47,9 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 
     penNibIcon.addEventListener('click', showFormOverlay);
+
+    contactLink.addEventListener('click', function(event) {
+        event.preventDefault();
+        showFormOverlay();
+    });
 });
