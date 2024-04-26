@@ -8,9 +8,9 @@
 
   <link rel="stylesheet" href="exp-style.css">
   <link rel="stylesheet" href="landing-xp-style.css">
-  <link rel="stylesheet" href="mobile-version.css" media="screen and (max-width: 500px)">
   <script src="overlay.js" defer></script>
   <script src="script.js" defer></script>
+  <script src="scrolltosection.js" defer></script>
 
   <script src="https://kit.fontawesome.com/f61418b52c.js" crossorigin="anonymous"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -22,11 +22,11 @@
 <body>
   <nav id="langing-page-nav">
     <i class="fa-solid fa-pen-nib navbar-icon"></i>
-    <i class="fa-regular fa-folder navbar-icon"></i>
-    <i class="fa-solid fa-heart navbar-icon"></i>
+    <i class="fa-regular fa-folder navbar-icon" onclick="scrollToExperience()"></i>
+    <i class="fa-solid fa-heart navbar-icon"  onclick="scrollToLanding()"></i>
   </nav>
 
-  <div class="landing">
+  <div class="landing" id="landing">
   <section>
   <main class="main-section-landing">
     <section class="left-section-landing">
@@ -54,7 +54,7 @@
   </section>
 </div>
 
-<div>
+<div class="experience" id="experience-section">
     <main>
         <section class="left-section">
             <ul>

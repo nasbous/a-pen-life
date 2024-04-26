@@ -66,6 +66,11 @@ p {
 /* NAVBAR */
 
 nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 5;
     background-color: var(--secondary-color-xp);
     border-top: 1.2px solid black;
     border-bottom: 2.5px solid black;

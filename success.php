@@ -19,6 +19,9 @@
                 <li><strong>Email:</strong> <?php echo htmlspecialchars($_GET['email']); ?></li>
                 <li><strong>Message:</strong> <?php echo htmlspecialchars($_GET['message']); ?></li>
             </ul>
+            <form action="index.html">
+    <input type="submit" value="Retour">
+</form>
         </div>
     </div>
 </main>
